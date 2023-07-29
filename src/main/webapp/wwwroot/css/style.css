@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.redirectHrefButton{
+    border: #000000 2px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: lightslategray;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+
+}
