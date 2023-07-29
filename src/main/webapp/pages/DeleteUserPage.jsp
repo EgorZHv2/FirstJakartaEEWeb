@@ -3,7 +3,7 @@
 <%@ page import="core.application.services.UserService" %>
 <%@ page import="java.util.UUID" %>
 <%@ page import="core.application.interfaces.IUserRepository" %>
-<%@ page import="persistance.repositories.UserRepository" %><%--
+<%@ page import="persistence.repositories.UserRepository" %><%--
   Created by IntelliJ IDEA.
   User: Егор
   Date: 29.07.2023

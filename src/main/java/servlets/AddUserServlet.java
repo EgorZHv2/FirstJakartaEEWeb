@@ -6,7 +6,6 @@ import jakarta.servlet.*;
 import jakarta.servlet.annotation.*;
 import jakarta.servlet.http.*;
 import core.domain.entities.User;
-import persistance.repositories.UserRepository;
 
 import java.io.IOException;
 

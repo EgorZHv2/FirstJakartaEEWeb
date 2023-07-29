@@ -4,7 +4,6 @@ import core.application.interfaces.IUserRepository;
 import core.domain.entities.User;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import persistance.repositories.UserRepository;
 
 import java.util.List;
 import java.util.UUID;

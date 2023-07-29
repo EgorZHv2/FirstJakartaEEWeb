@@ -1,4 +1,4 @@
-package persistance.repositories;
+package persistence.repositories;
 
 import core.application.dto.PageDTO;
 import core.application.dto.PaginationDTO;
