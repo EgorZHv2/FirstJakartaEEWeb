@@ -1,7 +1,5 @@
 package persistence.repositories;
 
-import core.application.dto.PageDTO;
-import core.application.dto.PaginationDTO;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
@@ -77,14 +75,6 @@ public class BaseRepository<T extends BaseEntityModel> implements core.applicati
         Root<T> variableRoot = criteriaQuery.from(modelclass);
         return session.createQuery(criteriaQuery).getResultList();
     }
-    @Override
-    public PageDTO<T> getPage(PaginationDTO dto) {
-        var session = HibernateUtil.getSessionFactory().openSession();
-        var offset = dto.getPageSize() * (dto.getPageNumber() - 1);
-        String query = String.format("from %s offset %s limit %s", "User", offset, dto.getPageSize());
-        var result = session.createQuery("select * from User").list();
-        var itemsCount = (Integer) session.createQuery(String.format("select count(*) from %s", modelclass)).getSingleResult();
-        return new PageDTO<T>(dto, result, itemsCount);
-    }
+
 
 }

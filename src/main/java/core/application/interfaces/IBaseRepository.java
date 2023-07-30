@@ -1,7 +1,6 @@
 package core.application.interfaces;
 
-import core.application.dto.PageDTO;
-import core.application.dto.PaginationDTO;
+
 import core.domain.entities.BaseEntityModel;
 
 import java.util.List;
@@ -13,6 +12,6 @@ public interface IBaseRepository<T extends BaseEntityModel> {
     void update(T entity);
     void delete(UUID id);
     List<T> getAll();
-    PageDTO<T> getPage(PaginationDTO dto);
+
 
 }
